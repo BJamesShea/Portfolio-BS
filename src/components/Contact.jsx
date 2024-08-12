@@ -23,6 +23,7 @@ const Contact = () => {
             href="https://github.com/BJamesShea"
             target="_blank"
             rel="noopener noreferrer"
+            className="githubContact"
           >
             <img src={github} alt="GitHub" />
           </a>
@@ -30,6 +31,7 @@ const Contact = () => {
             href="https://www.linkedin.com/in/brandon-j-shea"
             target="_blank"
             rel="noopener noreferrer"
+            className="linkedinContact"
           >
             <img src={linkedin} alt="LinkedIn" />
           </a>

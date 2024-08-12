@@ -418,12 +418,12 @@ a {
 .contactPage {
   display: flex;
   justify-content: center;
-  align-items: flex-start; /* Change to flex-start to align with the top */
-  height: auto; /* Allow height to adjust based on content */
+  align-items: flex-start;
+  height: auto;
   background-color: #181818;
   color: white;
   padding: 20px;
-  position: relative; /* Ensure positioning does not affect layout */
+  position: relative;
 }
 
 .contactContainer {
@@ -433,8 +433,8 @@ a {
   background-color: #2c2c2c;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
-  margin-top: 23vh; /* Align with the top of the introBlurb */
-  position: relative; /* Ensure positioning aligns with other sections */
+  margin-top: 23vh;
+  position: relative;
 }
 
 .contactContainer h1 {
@@ -510,5 +510,99 @@ a {
 @media (max-width: 768px) {
   .contactContainer {
     padding: 10px;
+  }
+}
+
+/* AboutMe Page Styling */
+.aboutMePage {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; /* Align at the top */
+  background-color: #181818;
+  color: white;
+  padding: 20px;
+  padding-top: 23vh; /* Match the padding-top of .projectCardContainer */
+  box-sizing: border-box; /* Ensure padding is included in height calculation */
+}
+
+.aboutMeContainer {
+  max-width: 600px;
+  width: 100%;
+  padding: 20px;
+  background-color: #2c2c2c;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center content horizontally */
+}
+
+.aboutMeContainer h1 {
+  margin-top: 0;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.aboutMeContainer p {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.profilePicture {
+  width: 150px; /* Adjust size as needed */
+  height: 150px; /* Adjust size as needed */
+  border-radius: 50%;
+  margin-bottom: 20px;
+  background-color: #444; /* Placeholder color */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profilePicture img {
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.aboutContactButton {
+  display: block;
+  margin: 10px auto;
+  background-color: #71839b;
+  border-radius: 10px;
+  border-style: none;
+  box-shadow: none;
+  color: #fff;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 500;
+  height: 50px;
+  padding: 14px 30px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.aboutContactButton:hover {
+  filter: brightness(0.8);
+  box-shadow: rgba(0, 0, 0, 0.05) 0 5px 30px, rgba(0, 0, 0, 0.05) 0 1px 4px;
+}
+
+.aboutContactButton:active {
+  box-shadow: rgba(0, 0, 0, 0.1) 0 3px 6px 0, rgba(0, 0, 0, 0.1) 0 0 10px 0,
+    rgba(0, 0, 0, 0.1) 0 1px 4px -1px;
+}
+
+/* Media Queries for responsive design */
+@media (max-width: 1024px) {
+  .aboutMePage {
+    padding-top: 15vh; /* Match the smaller screen padding-top */
+  }
+}
+
+@media (max-width: 768px) {
+  .aboutMePage {
+    padding-top: 15vh; /* Match the smaller screen padding-top */
   }
 }
