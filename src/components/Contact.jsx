@@ -1,8 +1,6 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import github from "../assets/github.svg";
 import linkedin from "../assets/linkedin.svg";
-import email from "../assets/email.svg"; // Add if you want an email icon
 
 const Contact = () => {
   return (
@@ -13,7 +11,7 @@ const Contact = () => {
           <p>
             Email:{" "}
             <a href="mailto:your-email@example.com" className="emailField">
-              your-email@example.com
+              brandon.shea1994@gmail.com
             </a>
           </p>
           <p>Phone: (123) 456-7890</p>
