@@ -4,40 +4,49 @@ const Projects = () => {
   return (
     <div className="projectCardContainer">
       <div className="projectCard">
-        <h2 className="projectHeader">Project 1</h2>
+        <h2 className="projectHeader">E-Commerce App</h2>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut blanditiis
-          nobis officiis corporis dolorum facere nemo nihil, repellendus quo
-          dolorem.
+          A React-based e-commerce app featuring product browsing, cart
+          management, and checkout functionality.
         </p>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, quos!
-        </p>
-        <button>View on GitHub</button>
+        <a
+          href="https://github.com/Adam-S988/final-sprint-asbs"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="projectBtn"
+        >
+          View on GitHub
+        </a>
       </div>
       <div className="projectCard">
-        <h2 className="projectHeader">Project 2</h2>
+        <h2 className="projectHeader">Dog Gallery</h2>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut blanditiis
-          nobis officiis corporis dolorum facere nemo nihil, repellendus quo
-          dolorem.
+          An interactive React app for browsing and selecting dog images from a
+          gallery.
         </p>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, quos!
-        </p>
-        <button>View on GitHub</button>
+        <a
+          href="https://github.com/BJamesShea/doggallery"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="projectBtn"
+        >
+          View on GitHub
+        </a>
       </div>
       <div className="projectCard">
-        <h2 className="projectHeader">Project 3</h2>
+        <h2 className="projectHeader">Insurance Software</h2>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut blanditiis
-          nobis officiis corporis dolorum facere nemo nihil, repellendus quo
-          dolorem.
+          Simple insurance management software built in Python, handling
+          policies and claims.
         </p>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, quos!
-        </p>
-        <button>View on GitHub</button>
+        <a
+          href="https://github.com/BJamesShea/QAP4-BS"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="projectBtn"
+        >
+          View on GitHub
+        </a>
       </div>
     </div>
   );

@@ -154,6 +154,7 @@ a {
   }
 }
 
+/* Home page buttons */
 .contactButton {
   margin: 10px;
   appearance: none;
@@ -278,6 +279,66 @@ a {
     width: 176px;
   }
 }
+
+/* project page buttons */
+
+.projectBtn {
+  margin: 10px;
+  appearance: none;
+  backface-visibility: hidden;
+  background-color: #71839b;
+  border-radius: 10px;
+  border-style: none;
+  box-shadow: none;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Inter, -apple-system, system-ui, "Segoe UI", Helvetica, Arial,
+    sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  height: 50px;
+  letter-spacing: normal;
+  line-height: 1.5;
+  outline: none;
+  overflow: hidden;
+  padding: 14px 30px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: top;
+  white-space: nowrap;
+}
+
+.projectBtn:hover {
+  filter: brightness(0.8);
+  box-shadow: rgba(0, 0, 0, 0.05) 0 5px 30px, rgba(0, 0, 0, 0.05) 0 1px 4px;
+  opacity: 1;
+  /* Removed transform property */
+}
+
+.projectBtn:active {
+  box-shadow: rgba(0, 0, 0, 0.1) 0 3px 6px 0, rgba(0, 0, 0, 0.1) 0 0 10px 0,
+    rgba(0, 0, 0, 0.1) 0 1px 4px -1px;
+  transition-duration: 0.35s;
+}
+
+.projectBtn:active:after {
+  opacity: 1;
+}
+
+@media (min-width: 768px) {
+  .projectBtn {
+    padding: 14px 22px;
+    width: 176px;
+  }
+}
+
 .projectCardContainer {
   display: flex;
   justify-content: center;
@@ -351,5 +412,103 @@ a {
     align-items: center;
     padding-top: 15vh;
     gap: 12px;
+  }
+}
+
+.contactPage {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; /* Change to flex-start to align with the top */
+  height: auto; /* Allow height to adjust based on content */
+  background-color: #181818;
+  color: white;
+  padding: 20px;
+  position: relative; /* Ensure positioning does not affect layout */
+}
+
+.contactContainer {
+  max-width: 600px;
+  width: 100%;
+  padding: 20px;
+  background-color: #2c2c2c;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+  margin-top: 23vh; /* Align with the top of the introBlurb */
+  position: relative; /* Ensure positioning aligns with other sections */
+}
+
+.contactContainer h1 {
+  margin-top: 0;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.contactContainer p {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.contactForm {
+  display: flex;
+  flex-direction: column;
+}
+
+.formGroup {
+  margin-bottom: 15px;
+}
+
+.formGroup label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 1rem;
+}
+
+.formGroup input,
+.formGroup textarea {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #181818;
+  color: white;
+  font-size: 1rem;
+}
+
+.formGroup input:focus,
+.formGroup textarea:focus {
+  outline: none;
+  border: 1px solid #71839b;
+}
+
+.contactButton {
+  margin-top: 10px;
+  background-color: #71839b;
+  border-radius: 10px;
+  border-style: none;
+  box-shadow: none;
+  color: #fff;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 500;
+  height: 50px;
+  padding: 14px 30px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.contactButton:hover {
+  filter: brightness(0.8);
+  box-shadow: rgba(0, 0, 0, 0.05) 0 5px 30px, rgba(0, 0, 0, 0.05) 0 1px 4px;
+}
+
+.contactButton:active {
+  box-shadow: rgba(0, 0, 0, 0.1) 0 3px 6px 0, rgba(0, 0, 0, 0.1) 0 0 10px 0,
+    rgba(0, 0, 0, 0.1) 0 1px 4px -1px;
+}
+
+@media (max-width: 768px) {
+  .contactContainer {
+    padding: 10px;
   }
 }
