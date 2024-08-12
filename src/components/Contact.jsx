@@ -9,7 +9,7 @@ const Contact = () => {
         <h1 className="contactHeader">Contact Me</h1>
         <div className="contactInfo">
           <p>
-            Email:{" "}
+            {" "}
             <a href="mailto:your-email@example.com" className="emailField">
               brandon.shea1994@gmail.com
             </a>

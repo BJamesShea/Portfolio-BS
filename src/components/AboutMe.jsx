@@ -12,19 +12,19 @@ const AboutMe = () => {
         </div>
         <h1>About Me</h1>
         <p>
-          Hello! I'm Brandon, an aspiring Software Engineer from St. John's,
-          Newfoundland, Canada. I'm currently nearing the end of my second
-          semester in the Software Development program at Keyin College.
+          Hi, I'm Brandon Shea, a Software Development student at Keyin College,
+          currently in my second semester. My early exposure to technology and
+          hands-on experience with machines sparked my passion for coding.
         </p>
         <p>
-          I am passionate about creating innovative solutions and enjoy the
-          challenge of solving complex problems. In my free time, I like to stay
-          updated with the latest trends in technology and experiment with new
-          programming languages and tools.
+          I'm actively developing my skills in Python, HTML, CSS, JavaScript,
+          and React. I'm looking forward to diving into backend development in
+          the next semesters.
         </p>
         <p>
-          Feel free to explore my projects or get in touch if you'd like to
-          collaborate or learn more about my work.
+          I hold certifications in AWS, Generative AI, and CompTIA A+ 1101.
+          Explore my projects or reach out if you'd like to collaborate or learn
+          more!
         </p>
         <Link to="/contact" className="aboutContactButton">
           Contact Me
