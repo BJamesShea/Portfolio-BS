@@ -11,20 +11,31 @@ function App() {
     <Router>
       <div className="App">
         <VertHeader />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/projects" element={<Projects />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="/aboutme" element={<AboutMe />} />
-        </Routes>
+        <div className="mainContent">
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/projects" element={<Projects />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="/aboutme" element={<AboutMe />} />
+          </Routes>
+        </div>
       </div>
     </Router>
   );
 }
 
 const Home = () => (
-  <div>
-    <h1>Welcome to the Home Page</h1>
+  <div className="introBlurb">
+    <h1>
+      Hi,
+      <br /> I'm Brandon, <br /> aspiring Software Engineer.
+    </h1>
+    <Link to="/projects" className="projectsButton">
+      Projects
+    </Link>
+    <Link to="/contact" className="contactButton">
+      Contact Me
+    </Link>
   </div>
 );
 
