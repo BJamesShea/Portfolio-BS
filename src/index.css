@@ -274,19 +274,26 @@ a {
 }
 
 .projectCard {
-  box-sizing: border-box;
-  width: 300px;
-  height: 500px;
-  padding: 20px;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  gap: 16px;
+  justify-content: flex-start;
+  align-items: center;
+  width: 300px; /* Default width */
+  height: 500px; /* Default height */
+  padding: 20px;
   background-color: #2c2c2c;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
   color: white;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.projectHeader {
+  color: #71839b;
+  text-align: center;
+  margin: 0;
+  padding-top: 10px;
+  width: 100%;
 }
 
 .projectCard h2 {
@@ -298,4 +305,35 @@ a {
 .projectCard:hover {
   transform: scale(1.12);
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.projectCard .projectHeader {
+  color: #71839b; /* The blue color you want */
+  text-align: center;
+}
+
+@media (max-width: 1024px) {
+  .projectCard {
+    width: 80%; /* Adjusts width to 80% of the container */
+    height: auto; /* Adjusts height automatically */
+  }
+
+  .projectCardContainer {
+    gap: 16px; /* Reduces the gap between cards */
+    padding: 16px; /* Reduces the padding around the container */
+  }
+}
+
+@media (max-width: 768px) {
+  .projectCard {
+    width: 100%; /* Full width on smaller screens */
+    height: auto; /* Adjusts height automatically */
+  }
+
+  .projectCardContainer {
+    flex-direction: column;
+    align-items: center; /* Center aligns cards vertically */
+    padding-top: 15vh;
+    gap: 12px; /* Further reduces the gap between cards */
+  }
 }
