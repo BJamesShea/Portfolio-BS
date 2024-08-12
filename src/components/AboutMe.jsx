@@ -8,7 +8,7 @@ const AboutMe = () => {
     <div className="aboutMePage">
       <div className="aboutMeContainer">
         <div className="profilePicture">
-          <img src={face} alt="Brandon Shea" />
+          <img src={face} alt="Brandon Shea" className="profilePic" />
         </div>
         <h1>About Me</h1>
         <p>

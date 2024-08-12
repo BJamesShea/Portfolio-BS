@@ -513,16 +513,15 @@ a {
   }
 }
 
-/* AboutMe Page Styling */
 .aboutMePage {
   display: flex;
   justify-content: center;
-  align-items: flex-start; /* Align at the top */
+  align-items: flex-start;
   background-color: #181818;
   color: white;
   padding: 20px;
-  padding-top: 23vh; /* Match the padding-top of .projectCardContainer */
-  box-sizing: border-box; /* Ensure padding is included in height calculation */
+  padding-top: 23vh;
+  box-sizing: border-box;
 }
 
 .aboutMeContainer {
@@ -534,7 +533,7 @@ a {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
   display: flex;
   flex-direction: column;
-  align-items: center; /* Center content horizontally */
+  align-items: center;
 }
 
 .aboutMeContainer h1 {
@@ -549,11 +548,11 @@ a {
 }
 
 .profilePicture {
-  width: 150px; /* Adjust size as needed */
-  height: 150px; /* Adjust size as needed */
+  width: 150px;
+  height: 150px;
   border-radius: 50%;
   margin-bottom: 20px;
-  background-color: #444; /* Placeholder color */
+  background-color: #444;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -573,7 +572,7 @@ a {
   border-radius: 10px;
   border-style: none;
   box-shadow: none;
-  color: #fff;
+  color: #ffffff;
   cursor: pointer;
   font-size: 15px;
   font-weight: 500;
@@ -594,15 +593,14 @@ a {
     rgba(0, 0, 0, 0.1) 0 1px 4px -1px;
 }
 
-/* Media Queries for responsive design */
 @media (max-width: 1024px) {
   .aboutMePage {
-    padding-top: 15vh; /* Match the smaller screen padding-top */
+    padding-top: 15vh;
   }
 }
 
 @media (max-width: 768px) {
   .aboutMePage {
-    padding-top: 15vh; /* Match the smaller screen padding-top */
+    padding-top: 15vh;
   }
 }
