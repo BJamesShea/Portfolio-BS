@@ -14,7 +14,6 @@ const Contact = () => {
               brandon.shea1994@gmail.com
             </a>
           </p>
-          <p>Phone: (123) 456-7890</p>
         </div>
         <div className="socialIcons">
           <a

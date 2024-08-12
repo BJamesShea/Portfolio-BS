@@ -604,3 +604,14 @@ a {
     padding-top: 15vh;
   }
 }
+
+.githubContact,
+.linkedinContact {
+  background-color: #71839b;
+  border-radius: 10px;
+}
+
+.linkedinContact {
+  background-color: #71839b;
+  border-radius: 10px;
+}
